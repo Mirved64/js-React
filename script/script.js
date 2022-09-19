@@ -61,16 +61,20 @@ function rememberMyFilms () {
     }
 }
 
-rememberMyFilms()
+rememberMyFilms();
 
-if (personalMovieDB.count < 10) {
-    console.log("Просмотренно довольно мало фильмов");
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
-    console.log("Вы классиеский зритель");
-} else if (personalMovieDB.count >= 30) {
-    console.log("Вы киноман");
-} else {
-    console.log("Произошла ошибка");
+function detectPersonalLevel () {
+    if (personalMovieDB.count < 10) {
+        console.log("Просмотренно довольно мало фильмов");
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
+        console.log("Вы классиеский зритель");
+    } else if (personalMovieDB.count >= 30) {
+        console.log("Вы киноман");
+    } else {
+        console.log("Произошла ошибка");
+    }
 }
+
+detectPersonalLevel();
 
 console.log(personalMovieDB);
