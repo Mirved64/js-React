@@ -61,6 +61,8 @@ function rememberMyFilms () {
     }
 }
 
+rememberMyFilms()
+
 if (personalMovieDB.count < 10) {
     console.log("Просмотренно довольно мало фильмов");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
